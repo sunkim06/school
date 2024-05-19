@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+      <link rel="stylesheet" href="../css/reset.css">
+      <link rel="stylesheet" href="./css/style.css">
+    </head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">BRIGHT MINDS SCHOOL</h1>
+
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../html/index.html">ГЛАВНАЯ</a></li>
+          <li><a href="../html/pis.html">ПОСТУПЛЕНИЕ И СТОИМОСТЬ</a></li>
+          <li><a href="../html/uchd.html">ВНЕУЧЕБНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+          <li><a href="../html/prepods.html">ПРЕПОДАВАТЕЛЬСКИЙ СОСТАВ</a></li>
+          <li><a href="../html/obrs.html">ОБРАТНАЯ СВЯЗЬ</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="menu-icon">
+        <div class="menu-icon__line"></div>
+      </button>
+
+      <button type="button" class="search">
+        <svg class="search__icon" width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.577 19L12.81 14.234C11.7691 14.9207 10.5105 15.1967 9.27775 15.0085C8.04504 14.8204 6.92601 14.1815 6.13735 13.2156C5.34869 12.2496 4.94652 11.0254 5.00871 9.78001C5.07091 8.53458 5.59305 7.35654 6.47402 6.47401C7.35639 5.59271 8.53443 5.07022 9.77996 5.00776C11.0255 4.94529 12.2499 5.34729 13.216 6.13589C14.1821 6.9245 14.8212 8.04358 15.0095 9.27639C15.1977 10.5092 14.9218 11.768 14.235 12.809L19 17.577L17.577 19ZM10.034 7.01401C9.23307 7.01348 8.46471 7.33115 7.89797 7.89713C7.33124 8.46312 7.01255 9.23106 7.01202 10.032C7.01149 10.833 7.32916 11.6013 7.89514 12.1681C8.46113 12.7348 9.22907 13.0535 10.03 13.054C10.4266 13.0543 10.8194 12.9764 11.1859 12.8249C11.5524 12.6734 11.8855 12.4511 12.1661 12.1709C12.4467 11.8906 12.6694 11.5579 12.8214 11.1916C12.9734 10.8253 13.0518 10.4326 13.052 10.036C13.0523 9.63942 12.9744 9.24666 12.8229 8.88015C12.6714 8.51365 12.4491 8.18058 12.1689 7.89996C11.8887 7.61934 11.5559 7.39667 11.1896 7.24466C10.8233 7.09265 10.4306 7.01427 10.034 7.01401V7.01401Z"/>
+        </svg>
+      </button>
+    </header>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cont{
+            background-color: #fcfc67;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            width: 70%; /* Ширина контейнера */
+            max-width: 800px; /* Максимальная ширина контейнера */
+            height: 400px; /* Высота контейнера */
+            margin: 0 auto; /* Выравнивание по центру */
+        }
+        .cont h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: black;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
+            justify-content: space-between;
+            margin-top: 20px;
+        
+        }
+
+        .contact-image {
+            flex-basis: 40%; /* Ширина блока */
+        }
+
+
+        .contact-image img {
+            width: 350px;
+            border-radius: 50%;
+        }
+
+        .contact-icons {
+            flex-basis: 55%; /* Ширина блока */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+        }
+
+       .icon img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px; /* Увеличиваем правый отступ */
+            margin-bottom: 50px; /* Добавляем вертикальный отступ */
+        }
+
+
+        .icon p {
+            margin: 0;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>КОНТАКТЫ</h1>
+        <div class="contact-info">
+            <div class="contact-image">
+                <img src="..\images\менеджер.jpg">
+                <p><h2>Менеджер отдела по приему учащихся</h2></p>
+            </div>
+            <div class="contact-icons">
+                <div class="icon">
+                    <img src="..\images\2776063.png">
+                    <p>Алматы, Бостандыкский район,ул. Тимирязева 113</p>
+                </div>
+                <div class="icon">
+                    <img src="..\images\images (1).png">
+                    <p>+7 (777) 736 54 13</p>
+                </div>
+                <div class="icon">
+                    <img src= "..\images\images (2).png">
+                    <p>пн-пт с 08:00 до 18:00 / сб-вс - выходной</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
